@@ -1,3 +1,15 @@
+<div id="students"></div>
+
+<script type="text/javascript">
+  $(function() {
+    // Firstbackboneapp is the app name
+    window.router = new Firstbackboneapp.Routers.PostsRouter({students: <%= @students.to_json.html_safe -%>});
+    Backbone.history.start();
+  });
+</script>
+
+
+<!--
 <p id="notice"><%= notice %></p>
 
 <h1>students</h1>
